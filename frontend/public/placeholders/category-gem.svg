@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Placeholder gem category image">
+  <rect width="900" height="1100" fill="#F0E8DC"/>
+  <rect x="24" y="24" width="852" height="1052" fill="none" stroke="#B08D57" stroke-opacity="0.35"/>
+  <g transform="translate(110 176) scale(1.7)" fill="none" stroke="#45382B" stroke-width="1.7647058823529411" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <path d="M140 150 l60 -60 l60 60 l-60 150z M140 150 h120 M175 150 l25 -60 l25 60 l-25 150"/>
+  </g>
+  
+  <text x="50%" y="1040" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#45382B" opacity="0.55">PLACEHOLDER IMAGE</text>
+</svg>

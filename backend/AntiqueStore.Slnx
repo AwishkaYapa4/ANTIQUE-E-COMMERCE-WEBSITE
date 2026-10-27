@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="AntiqueStore.Api/AntiqueStore.Api.csproj" />
+  <Project Path="AntiqueStore.Application/AntiqueStore.Application.csproj" />
+  <Project Path="AntiqueStore.Domain/AntiqueStore.Domain.csproj" />
+  <Project Path="AntiqueStore.Infrastructure/AntiqueStore.Infrastructure.csproj" />
+  <Project Path="AntiqueStore.Migrations.SqlServer/AntiqueStore.Migrations.SqlServer.csproj" />
+  <Project Path="AntiqueStore.Tests/AntiqueStore.Tests.csproj" />
+</Solution>

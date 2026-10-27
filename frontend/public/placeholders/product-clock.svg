@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Placeholder clock image">
+  <rect width="1200" height="1500" fill="#F0E8DC"/>
+  <rect x="24" y="24" width="1152" height="1452" fill="none" stroke="#B08D57" stroke-opacity="0.35"/>
+  <g transform="translate(159.99999999999994 265.99999999999994) scale(2.2)" fill="none" stroke="#45382B" stroke-width="1.3636363636363635" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <rect x="135" y="80" width="130" height="240" rx="60"/><circle cx="200" cy="170" r="48"/>
+          <path d="M200 170 v-30 M200 170 l22 14 M175 320 h50 M200 218 v60"/><circle cx="200" cy="285" r="10"/>
+  </g>
+  
+  <text x="50%" y="1440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="3" fill="#45382B" opacity="0.55">PLACEHOLDER IMAGE</text>
+</svg>

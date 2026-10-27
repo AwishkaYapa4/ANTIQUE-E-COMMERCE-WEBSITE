@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    EF Core migrations for Microsoft SQL Server. The MySQL migrations stay in AntiqueStore.Infrastructure;
+    each provider has its own migration history, so neither set is touched by the other.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\AntiqueStore.Infrastructure\AntiqueStore.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

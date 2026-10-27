@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Placeholder Victorian image">
+  <rect width="900" height="1100" fill="#E9DFD0"/>
+  <rect x="24" y="24" width="852" height="1052" fill="none" stroke="#B08D57" stroke-opacity="0.35"/>
+  <g transform="translate(130 198) scale(1.6)" fill="none" stroke="#45382B" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <rect x="135" y="80" width="130" height="240" rx="60"/><circle cx="200" cy="170" r="48"/>
+          <path d="M200 170 v-30 M200 170 l22 14 M175 320 h50 M200 218 v60"/><circle cx="200" cy="285" r="10"/>
+  </g>
+  
+  <text x="50%" y="1040" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#45382B" opacity="0.55">PLACEHOLDER IMAGE</text>
+</svg>

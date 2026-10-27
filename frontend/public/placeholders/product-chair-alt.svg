@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Placeholder chair detail image">
+  <rect width="1200" height="1500" fill="#EAE0D1"/>
+  <rect x="24" y="24" width="1152" height="1452" fill="none" stroke="#B08D57" stroke-opacity="0.35"/>
+  <g transform="translate(-40 46) scale(3.2)" fill="none" stroke="#45382B" stroke-width="0.9375" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <path d="M140 90 v210 M260 90 v210 M140 90 h120 M140 190 h120 M140 140 h120 M150 300 h0"/>
+  </g>
+  
+  <text x="50%" y="1440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="3" fill="#45382B" opacity="0.55">PLACEHOLDER IMAGE</text>
+</svg>

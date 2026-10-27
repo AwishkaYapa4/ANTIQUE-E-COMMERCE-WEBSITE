@@ -1,0 +1,13 @@
+**/node_modules
+**/bin
+**/obj
+**/dist
+**/.vs
+**/.env
+**/.env.*
+!frontend/.env.example
+**/App_Data
+**/wwwroot/uploads
+frontend/test-results
+frontend/playwright-report
+.git

@@ -1,0 +1,37 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+backend/AntiqueStore.Api/wwwroot/uploads/
+backend/AntiqueStore.Api/App_Data/
+*.db
+*.db-shm
+*.db-wal
+
+# Node / Vite
+node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+*.tsbuildinfo
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+# Emulator-only demo config (public placeholder values, no secrets)
+!frontend/.env.e2e
+**/firebase-service-account*.json
+**/*serviceAccount*.json
+appsettings.*.local.json
+
+# Logs (Firebase CLI/emulator debug logs can contain request details)
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/

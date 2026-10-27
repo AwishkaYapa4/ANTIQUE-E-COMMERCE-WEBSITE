@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens. Every colour and font comes from these CSS variables, which the ThemeProvider
+ * overwrites at runtime from the admin's published theme settings. Never hard-code colours in components.
+ */
+:root {
+  --c-bg: #f8f5ef;
+  --c-surface: #f0e8dc;
+  --c-ink: #29231e;
+  --c-muted: #77716b;
+  --c-primary: #45382b;
+  --c-accent: #b08d57;
+  --c-secondary: #777660;
+  --c-line: #e5ded3;
+  --c-button: #45382b;
+  --c-button-ink: #ffffff;
+  --c-success: #47745b;
+  --c-danger: #b84d4d;
+  --c-white: #ffffff;
+  --font-heading-family: 'Cormorant Garamond', Georgia, serif;
+  --font-body-family: 'Inter', system-ui, sans-serif;
+  --base-size: 16px;
+  --scale: 1.25;
+  --radius: 4px;
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-primary: var(--c-primary);
+  --color-accent: var(--c-accent);
+  --color-secondary: var(--c-secondary);
+  --color-line: var(--c-line);
+  --color-button: var(--c-button);
+  --color-button-ink: var(--c-button-ink);
+  --color-success: var(--c-success);
+  --color-danger: var(--c-danger);
+  --color-paper: var(--c-white);
+  --font-heading: var(--font-heading-family);
+  --font-body: var(--font-body-family);
+  --radius-theme: var(--radius);
+}
+
+/* Custom utilities (usable in markup and with @apply). */
+@utility rounded-theme {
+  border-radius: var(--radius);
+}
+@utility link-underline {
+  text-decoration-line: underline;
+  text-decoration-color: var(--c-line);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s;
+  &:hover { text-decoration-color: var(--c-accent); }
+}
+
+@layer base {
+  html {
+    font-size: var(--base-size);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-bg font-body text-ink antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading text-ink;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+  }
+  h1 { font-size: clamp(2.2rem, calc(var(--scale) * var(--scale) * var(--scale) * 1.6rem), 4.4rem); }
+  h2 { font-size: clamp(1.8rem, calc(var(--scale) * var(--scale) * 1.6rem), 3rem); }
+  h3 { font-size: calc(var(--scale) * 1.15rem); }
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 2px;
+  }
+  ::selection { background: color-mix(in srgb, var(--c-accent) 30%, transparent); }
+  img { max-width: 100%; }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply text-xs font-medium tracking-[0.2em] text-accent uppercase;
+  }
+  /* Typography for sanitized rich text (product descriptions, content pages). */
+  .prose-antique {
+    @apply max-w-none text-[1.02rem] leading-relaxed text-ink;
+  }
+  .prose-antique p { @apply my-4; }
+  .prose-antique h2 { @apply mt-10 mb-3 text-3xl; }
+  .prose-antique h3 { @apply mt-8 mb-2 text-2xl; }
+  .prose-antique ul { @apply my-4 list-disc pl-6; }
+  .prose-antique ol { @apply my-4 list-decimal pl-6; }
+  .prose-antique a { @apply link-underline text-primary; }
+  .prose-antique blockquote { @apply my-6 border-l-2 border-accent pl-5 font-heading text-xl italic; }
+  .prose-antique img { @apply my-6 rounded-theme; }
+  .prose-antique table { @apply my-6 w-full border-collapse text-sm; }
+  .prose-antique th, .prose-antique td { @apply border border-line px-3 py-2 text-left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

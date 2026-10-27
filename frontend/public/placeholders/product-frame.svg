@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Placeholder frame image">
+  <rect width="1200" height="1500" fill="#F0E8DC"/>
+  <rect x="24" y="24" width="1152" height="1452" fill="none" stroke="#B08D57" stroke-opacity="0.35"/>
+  <g transform="translate(159.99999999999994 265.99999999999994) scale(2.2)" fill="none" stroke="#45382B" stroke-width="1.3636363636363635" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <rect x="105" y="95" width="190" height="230"/><rect x="125" y="115" width="150" height="190"/>
+          <path d="M125 270 l45 -50 l35 35 l25 -25 l45 45"/><circle cx="235" cy="160" r="14"/>
+  </g>
+  
+  <text x="50%" y="1440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="3" fill="#45382B" opacity="0.55">PLACEHOLDER IMAGE</text>
+</svg>
